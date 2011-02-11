@@ -24,7 +24,7 @@ Example
   create_table :products do |t|
     t.string :description, :null => false
     t.integer :size, :null => false
-    end
+  end
 
   # Controller
 	
