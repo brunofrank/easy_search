@@ -4,17 +4,17 @@ Easy Search 0.1
 Introduction
 ============
 
-When i was creating search form i get bored because this is a very repetitive task, and because that i start to create this plugin, this first version is the very basic but by now this is enough, and i will improve this, and if you have some suggestion please let me know this.
+  When i was creating search form i get bored because this is a very repetitive task, and because that i start to create this plugin, this first version is the very basic but by now this is enough, and i will improve this, and if you have some suggestion please let me know this.
 
 Rails
 =====
 
-This first version was created and tested with Rails 2.3.5.
+  This first version was created and tested with Rails 2.3.5.
 
 How to install
 ==============
 
-./script/plugin install git@github.com:brunofrank/easy_search.git
+  ./script/plugin install git@github.com:brunofrank/easy_search.git
 
 Example
 =======
@@ -24,31 +24,30 @@ Example
   create_table :products do |t|
     t.string :description, :null => false
     t.integer :size, :null => false
-  end
+    end
 
-	# Controller
+  # Controller
 	
-	def index
-		# Replace the all for search and pass the param if the param is null it will return all.
+  def index
+    # Replace the all for search and pass the param if the param is null it will return all.
     @users = User.search params[:query] 
   end
 
   # Models
 
   class Product < ActiveRecord::Base
- 		# :equals tell the plugin to use "=" in SQL instead LIKE that is the default.
-		acts_as_searchable :description, :size => :equals
+    # :equals tell the plugin to use "=" in SQL instead LIKE that is the default.
+    acts_as_searchable :description, :size => :equals
   end
 	
-	# View
-	# Put the search_form when you want to print the search form.
-	<%= search_form %> 
-
+  # View
+  # Put the search_form when you want to print the search form.
+  <%= search_form %> 
 
 Contact
 =======
   
-if you need help contanct me: bfscordeiro (at) gmail.com
+  if you need help contanct me: bfscordeiro (at) gmail.com
 
 
 Copyright (c) 2010 Bruno Cordeiro, released under the MIT license
