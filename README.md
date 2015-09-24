@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Example
 
-  ### Migrations 
+  Migrations 
 
 ```ruby
   create_table :products do |t|
@@ -31,7 +31,7 @@ Or install it yourself as:
   end
 ```
 
-  ### Models
+  Models
 
 ```ruby
   class Product < ActiveRecord::Base
@@ -40,7 +40,7 @@ Or install it yourself as:
   end
 ```
   
-  ### Controller
+  Controller
   
 ```ruby
   def index
@@ -49,7 +49,7 @@ Or install it yourself as:
   end  
 ```
   
-  ### View
+  View
 ```ruby
   # Put the search_form when you want to print the search form.
   <%= search_form %> 
