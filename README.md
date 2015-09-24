@@ -1,4 +1,4 @@
-# EasySearch
+# EasySearchForm
 
 ## Introduction
 
@@ -9,7 +9,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'easy_search'
+gem 'easy_search_form'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install easy_search
+    $ gem install easy_search_form
 
 ## Example
 

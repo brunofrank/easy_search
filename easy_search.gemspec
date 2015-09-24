@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'easy_search/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Easy Search"
+  spec.name          = "easy_search_form"
   spec.version       = EasySearch::VERSION
   spec.authors       = ["Bruno Cordeiro"]
   spec.email         = ["bfscordeiro@gmail.com"]
