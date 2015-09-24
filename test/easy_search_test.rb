@@ -1,22 +1,11 @@
-require File.dirname(__FILE__) + '/test_helper'
-include EasySearchHelper  
+require 'test_helper'
 
-class EasySearchTest < ActiveSupport::TestCase
-  load_schema 
-    
-  class User < ActiveRecord::Base
-    acts_as_searchable :name
-  end  
-  
-  def test_schema_has_loaded_correctly
-    assert_equal [], User.all
+class EasySearchTest < Minitest::Test
+  def test_that_it_has_a_version_number
+    refute_nil ::EasySearch::VERSION
   end
-  
-  def test_model_has_search_form
-    assert User.respond_to?(:search)
-  end  
-  
-  def test_controllers_has_search_form
-    assert self.respond_to?(:search_form)
+
+  def test_it_does_something_useful
+    assert false
   end
 end
