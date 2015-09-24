@@ -1,7 +1,7 @@
-require "easy_search/version"
-require 'easy_search/easysearch_helper'
+require "easy_search_form/version"
+require 'easy_search_form/easysearch_helper'
 
-module EasySearch
+module EasySearchForm
   def self.included(base)
     base.send :extend, ClassMethods
   end
@@ -54,4 +54,4 @@ module EasySearch
 end
 
 ActionView::Base.send :include, EasySearchHelper
-ActiveRecord::Base.send :include, EasySearch
+ActiveRecord::Base.send :include, EasySearchForm
