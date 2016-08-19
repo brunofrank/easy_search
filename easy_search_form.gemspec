@@ -5,7 +5,7 @@ require 'easy_search_form/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "easy_search_form"
-  spec.version       = EasySearch::VERSION
+  spec.version       = EasySearchForm::VERSION
   spec.authors       = ["Bruno Cordeiro"]
   spec.email         = ["bfscordeiro@gmail.com"]
 
