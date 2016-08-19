@@ -8,6 +8,8 @@
 
 Add this line to your application's Gemfile:
 
+This branch is for Rails before 3.2
+
 ```ruby
 gem 'easy_search_form'
 ```
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Example
 
-  Migrations 
+  Migrations
 
 ```ruby
   create_table :products do |t|
@@ -39,24 +41,24 @@ Or install it yourself as:
     acts_as_searchable :description, :size => :equals
   end
 ```
-  
+
   Controller
-  
+
 ```ruby
   def index
     # Replace the all for search and pass the param if the param is null it will return all.
-    @users = User.search params[:query] 
+    @users = User.search params[:query]
   end  
 ```
-  
+
   View
 ```ruby
   # Put the search_form when you want to print the search form.
-  <%= search_form %> 
+  <%= search_form %>
 ```
 
 ## Contact
-  
+
   if you need help contanct me: bfscordeiro (at) gmail.com
 
 
